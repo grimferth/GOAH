@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1401499026 source:c:\users\stephen\documents\github\goah\main.cpp
+	<fstream>
+	<iostream>
+	<cstring>
+	<sstream>
+	"common.h"
+	"global.h"
+	"main.h"
+	"PoweredObject.h"
+
