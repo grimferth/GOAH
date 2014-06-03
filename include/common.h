@@ -1,18 +1,20 @@
-/*+===================================================================
+/*+====================================================================================================================
 
-   File:      common.h
+   File:		common.h
 
-   Summary:   definitions shared by entire project
+   Summary:		definitions shared by entire project
 
-   Classes:   none
+   Classes:		none
 
-   Functions: none
+   Functions:	none
 
-   Origin:    none
+   Origin:		none
 
- ----------------------------------------------------------------------
+   Notes:		makes use of the Eigen template library (http://eigen.tuxfamily.org/index.php?title=Main_Page)
+
+ ----------------------------------------------------------------------------------------------------------------------
    Copyright (C) 2014, Stephen Wunschel
- ===================================================================+*/
+ ===================================================================================================================+*/
 
 #pragma once
 
@@ -24,20 +26,16 @@ using namespace Eigen;
 
 // project header files
 
-// type definitions
-typedef Matrix<float, 3, 1> coords3D;
-typedef struct bearing3D {
-	float yaw, pitch, roll;
-	} bearing3D;
-typedef Matrix<float, 3, 1> vector3D;
-
 // definitions
-#define MAX_CMD_BUFF 256				// console command input buffer
+#define MAX_CMD_BUFF 256						// console command input buffer
+
+// type definitions
+typedef Matrix< double , 3 , 1> coords3D;		// coordinates in 3D space
 
 // enumerations
-enum COORDS								// offset into vector for each coordinate
+enum COORDS										// offset into vector for each coordinate
 {
-	x_cord=0,
-	y_cord,
-	z_cord
+	x_coord=0,
+	y_coord,
+	z_coord
 };

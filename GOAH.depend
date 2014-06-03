@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1401499026 source:c:\users\stephen\documents\github\goah\main.cpp
+1401571037 source:c:\users\stephen\documents\github\goah\main.cpp
 	<fstream>
 	<iostream>
 	<cstring>
@@ -7,5 +7,412 @@
 	"common.h"
 	"global.h"
 	"main.h"
-	"PoweredObject.h"
+
+1401799045 c:\users\stephen\documents\github\goah\include\common.h
+	<Core>
+
+1393432518 c:\users\stephen\documents\eigen\eigen\core
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Core/util/Macros.h"
+	<complex>
+	"src/Core/util/MKL_support.h"
+	<malloc.h>
+	<immintrin.h>
+	<emmintrin.h>
+	<xmmintrin.h>
+	<pmmintrin.h>
+	<tmmintrin.h>
+	<smmintrin.h>
+	<nmmintrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<omp.h>
+	<cerrno>
+	<cstddef>
+	<cstdlib>
+	<cmath>
+	<cassert>
+	<functional>
+	<iosfwd>
+	<cstring>
+	<string>
+	<limits>
+	<climits>
+	<algorithm>
+	<iostream>
+	<intrin.h>
+	<new>
+	"src/Core/util/Constants.h"
+	"src/Core/util/ForwardDeclarations.h"
+	"src/Core/util/Meta.h"
+	"src/Core/util/StaticAssert.h"
+	"src/Core/util/XprHelper.h"
+	"src/Core/util/Memory.h"
+	"src/Core/NumTraits.h"
+	"src/Core/MathFunctions.h"
+	"src/Core/GenericPacketMath.h"
+	"src/Core/arch/SSE/PacketMath.h"
+	"src/Core/arch/SSE/MathFunctions.h"
+	"src/Core/arch/SSE/Complex.h"
+	"src/Core/arch/AltiVec/PacketMath.h"
+	"src/Core/arch/AltiVec/Complex.h"
+	"src/Core/arch/NEON/PacketMath.h"
+	"src/Core/arch/NEON/Complex.h"
+	"src/Core/arch/Default/Settings.h"
+	"src/Core/Functors.h"
+	"src/Core/DenseCoeffsBase.h"
+	"src/Core/DenseBase.h"
+	"src/Core/MatrixBase.h"
+	"src/Core/EigenBase.h"
+	"src/Core/Assign.h"
+	"src/Core/util/BlasUtil.h"
+	"src/Core/DenseStorage.h"
+	"src/Core/NestByValue.h"
+	"src/Core/ForceAlignedAccess.h"
+	"src/Core/ReturnByValue.h"
+	"src/Core/NoAlias.h"
+	"src/Core/PlainObjectBase.h"
+	"src/Core/Matrix.h"
+	"src/Core/Array.h"
+	"src/Core/CwiseBinaryOp.h"
+	"src/Core/CwiseUnaryOp.h"
+	"src/Core/CwiseNullaryOp.h"
+	"src/Core/CwiseUnaryView.h"
+	"src/Core/SelfCwiseBinaryOp.h"
+	"src/Core/Dot.h"
+	"src/Core/StableNorm.h"
+	"src/Core/MapBase.h"
+	"src/Core/Stride.h"
+	"src/Core/Map.h"
+	"src/Core/Block.h"
+	"src/Core/VectorBlock.h"
+	"src/Core/Ref.h"
+	"src/Core/Transpose.h"
+	"src/Core/DiagonalMatrix.h"
+	"src/Core/Diagonal.h"
+	"src/Core/DiagonalProduct.h"
+	"src/Core/PermutationMatrix.h"
+	"src/Core/Transpositions.h"
+	"src/Core/Redux.h"
+	"src/Core/Visitor.h"
+	"src/Core/Fuzzy.h"
+	"src/Core/IO.h"
+	"src/Core/Swap.h"
+	"src/Core/CommaInitializer.h"
+	"src/Core/Flagged.h"
+	"src/Core/ProductBase.h"
+	"src/Core/GeneralProduct.h"
+	"src/Core/TriangularMatrix.h"
+	"src/Core/SelfAdjointView.h"
+	"src/Core/products/GeneralBlockPanelKernel.h"
+	"src/Core/products/Parallelizer.h"
+	"src/Core/products/CoeffBasedProduct.h"
+	"src/Core/products/GeneralMatrixVector.h"
+	"src/Core/products/GeneralMatrixMatrix.h"
+	"src/Core/SolveTriangular.h"
+	"src/Core/products/GeneralMatrixMatrixTriangular.h"
+	"src/Core/products/SelfadjointMatrixVector.h"
+	"src/Core/products/SelfadjointMatrixMatrix.h"
+	"src/Core/products/SelfadjointProduct.h"
+	"src/Core/products/SelfadjointRank2Update.h"
+	"src/Core/products/TriangularMatrixVector.h"
+	"src/Core/products/TriangularMatrixMatrix.h"
+	"src/Core/products/TriangularSolverMatrix.h"
+	"src/Core/products/TriangularSolverVector.h"
+	"src/Core/BandMatrix.h"
+	"src/Core/CoreIterators.h"
+	"src/Core/BooleanRedux.h"
+	"src/Core/Select.h"
+	"src/Core/VectorwiseOp.h"
+	"src/Core/Random.h"
+	"src/Core/Replicate.h"
+	"src/Core/Reverse.h"
+	"src/Core/ArrayBase.h"
+	"src/Core/ArrayWrapper.h"
+	"src/Core/products/GeneralMatrixMatrix_MKL.h"
+	"src/Core/products/GeneralMatrixVector_MKL.h"
+	"src/Core/products/GeneralMatrixMatrixTriangular_MKL.h"
+	"src/Core/products/SelfadjointMatrixMatrix_MKL.h"
+	"src/Core/products/SelfadjointMatrixVector_MKL.h"
+	"src/Core/products/TriangularMatrixMatrix_MKL.h"
+	"src/Core/products/TriangularMatrixVector_MKL.h"
+	"src/Core/products/TriangularSolverMatrix_MKL.h"
+	"src/Core/Assign_MKL.h"
+	"src/Core/GlobalFunctions.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+	"Eigen2Support"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\disablestupidwarnings.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\macros.h
+	<cstdlib>
+	<iostream>
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\mkl_support.h
+	<mkl.h>
+	<mkl_lapacke.h>
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\constants.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\forwarddeclarations.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\meta.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\staticassert.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\xprhelper.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\memory.h
+	<unistd.h>
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\numtraits.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\mathfunctions.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\genericpacketmath.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\sse\packetmath.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\sse\mathfunctions.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\sse\complex.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\altivec\packetmath.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\altivec\complex.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\neon\packetmath.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\neon\complex.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arch\default\settings.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\functors.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\densecoeffsbase.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\densebase.h
+	"../plugins/BlockMethods.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\plugins\blockmethods.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\matrixbase.h
+	"../plugins/CommonCwiseUnaryOps.h"
+	"../plugins/CommonCwiseBinaryOps.h"
+	"../plugins/MatrixCwiseUnaryOps.h"
+	"../plugins/MatrixCwiseBinaryOps.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\plugins\commoncwiseunaryops.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\plugins\commoncwisebinaryops.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\plugins\matrixcwiseunaryops.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\plugins\matrixcwisebinaryops.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\eigenbase.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\assign.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\blasutil.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\densestorage.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\nestbyvalue.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\forcealignedaccess.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\returnbyvalue.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\noalias.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\plainobjectbase.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\matrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\array.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\cwisebinaryop.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\cwiseunaryop.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\cwisenullaryop.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\cwiseunaryview.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\selfcwisebinaryop.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\dot.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\stablenorm.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\mapbase.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\stride.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\map.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\block.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\vectorblock.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\ref.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\transpose.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\diagonalmatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\diagonal.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\diagonalproduct.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\permutationmatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\transpositions.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\redux.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\visitor.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\fuzzy.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\io.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\swap.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\commainitializer.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\flagged.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\productbase.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\generalproduct.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\triangularmatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\selfadjointview.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\generalblockpanelkernel.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\parallelizer.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\coeffbasedproduct.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\generalmatrixvector.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\generalmatrixmatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\solvetriangular.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\generalmatrixmatrixtriangular.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\selfadjointmatrixvector.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\selfadjointmatrixmatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\selfadjointproduct.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\selfadjointrank2update.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\triangularmatrixvector.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\triangularmatrixmatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\triangularsolvermatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\triangularsolvervector.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\bandmatrix.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\coreiterators.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\booleanredux.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\select.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\vectorwiseop.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\random.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\replicate.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\reverse.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arraybase.h
+	"../plugins/CommonCwiseUnaryOps.h"
+	"../plugins/MatrixCwiseUnaryOps.h"
+	"../plugins/ArrayCwiseUnaryOps.h"
+	"../plugins/CommonCwiseBinaryOps.h"
+	"../plugins/MatrixCwiseBinaryOps.h"
+	"../plugins/ArrayCwiseBinaryOps.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\plugins\arraycwiseunaryops.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\plugins\arraycwisebinaryops.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\arraywrapper.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\generalmatrixmatrix_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\generalmatrixvector_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\generalmatrixmatrixtriangular_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\selfadjointmatrixmatrix_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\selfadjointmatrixvector_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\triangularmatrixmatrix_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\triangularmatrixvector_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\products\triangularsolvermatrix_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\assign_mkl.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\globalfunctions.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\core\util\reenablestupidwarnings.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\eigen2support
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Eigen2Support/Macros.h"
+	"src/Eigen2Support/Memory.h"
+	"src/Eigen2Support/Meta.h"
+	"src/Eigen2Support/Lazy.h"
+	"src/Eigen2Support/Cwise.h"
+	"src/Eigen2Support/CwiseOperators.h"
+	"src/Eigen2Support/TriangularSolver.h"
+	"src/Eigen2Support/Block.h"
+	"src/Eigen2Support/VectorBlock.h"
+	"src/Eigen2Support/Minor.h"
+	"src/Eigen2Support/MathFunctions.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+	<iostream>
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\macros.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\memory.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\meta.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\lazy.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\cwise.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\cwiseoperators.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\triangularsolver.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\block.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\vectorblock.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\minor.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\mathfunctions.h
+
+1399811384 c:\users\stephen\documents\github\goah\include\global.h
+
+1399811384 c:\users\stephen\documents\github\goah\include\main.h
 

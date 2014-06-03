@@ -22,9 +22,9 @@
 using namespace std;
 
 // project header files
-#include "common.h"						// definitions shared by entire project
-#include "global.h"						// definitions for global variables
-#include "main.h"						// definitions for main program
+#include "common.h"								// definitions shared by entire project
+#include "global.h"								// definitions for global variables
+#include "main.h"								// definitions for main program
 
 // declarations
 
@@ -37,9 +37,9 @@ using namespace std;
  *************************************************************************************************************************************/
 int main()
 {
-    std::cout << PROJECT_VERSION << std::endl;					// display project copyright notice
-    readCommands();						// enter command loop
-    return 0;							// exit
+    std::cout << PROJECT_VERSION << std::endl;		// display project copyright notice
+    readCommands();								// enter command loop
+    return 0;									// exit
 }
 
 /*************************************************************************************************************************************
@@ -53,7 +53,7 @@ int main()
 bool doCommand(const char *input_buffer)
 {
 	// local variables
-	int token;							// token for switch structure
+	int token;									// token for switch structure
 
 	// return when command buffer is empty
 	if (!strcmp(input_buffer, ""))
@@ -94,6 +94,7 @@ bool doCommand(const char *input_buffer)
  *************************************************************************************************************************************/
 bool handle_display(void)
 {
+	// TODO
 	return true;
 }
 
@@ -106,6 +107,7 @@ bool handle_display(void)
  *************************************************************************************************************************************/
 bool handle_setposition(const char *buf)
 {
+	// TODO
 	return true;
 }
 
@@ -147,34 +149,34 @@ int parseCommand(const char *buf)
 void readCommands()
 {
 	//local variables
-	int next_char;						// next character
-	char cmd_buffer[MAX_CMD_BUFF];		// command buffer
-	int count = 0;						// index into command buffer
+	int next_char;								// next character
+	char cmd_buffer[MAX_CMD_BUFF];				// command buffer
+	int count = 0;								// index into command buffer
 
 	// setup command prompt
-    std::cout << "wt> ";				// send prompt
-    std::cout.flush();					// flush the cout buffer
+    std::cout << "wt> ";						// send prompt
+    std::cout.flush();							// flush the cout buffer
 
 	// read a command and call doCommand:
-	while ((next_char=getc(stdin)) != EOF)			// read characters until end of file
+	while ((next_char=getc(stdin)) != EOF)		// read characters until end of file
 	{
-		if (next_char == '\n')						// if next char is a newline then -
+		if (next_char == '\n')					// if next char is a newline then -
 		{
-			cmd_buffer[count] = '\0';					// write end of string
-			if (!doCommand(cmd_buffer))					// execute the command, if returns false
-				return;										// return to caller
-			count = 0;									// reset index
-			std::cout << "wt> ";						// resend prompt
-			std::cout.flush();							// flush the cout buffer
+			cmd_buffer[count] = '\0';				// write end of string
+			if (!doCommand(cmd_buffer))				// execute the command, if returns false
+				return;									// return to caller
+			count = 0;								// reset index
+			std::cout << "wt> ";					// resend prompt
+			std::cout.flush();						// flush the cout buffer
 		}
-		else										// else - handle next character
+		else									// else - handle next character
 		{
-			if (count >= MAX_CMD_BUFF-1)				// check to see if command buffer will be overrun
+			if (count >= MAX_CMD_BUFF-1)			// check to see if command buffer will be overrun
 			{
 				std::cout << "Warning: command buffer full !! " << std::endl;	// yes - send error message
-				count = 0;									// and reset index into command buffer
+				count = 0;								// and reset index into command buffer
 			}
-			cmd_buffer[count++] = next_char;				// copy char into buffer and increment pointer
+			cmd_buffer[count++] = next_char;		// copy char into buffer and increment pointer
 		}
 	}
 }
