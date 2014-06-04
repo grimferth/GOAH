@@ -41,3 +41,9 @@ enum COORDS										// offset into vector for each coordinate
 	y_coord,
 	z_coord
 };
+enum EULERANGLES									// offset into vector for each coordinate
+{
+	yaw_angle=0,
+	pitch_angle,
+	roll_angle
+};

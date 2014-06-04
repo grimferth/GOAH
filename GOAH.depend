@@ -8,7 +8,7 @@
 	"global.h"
 	"main.h"
 
-1401819693 c:\users\stephen\documents\github\goah\include\common.h
+1401904027 c:\users\stephen\documents\github\goah\include\common.h
 	<Core>
 	<Geometry>
 
@@ -417,10 +417,10 @@
 
 1401799735 c:\users\stephen\documents\github\goah\include\main.h
 
-1401814096 source:c:\users\stephen\documents\github\goah\src\spaceobject.cpp
+1401903651 source:c:\users\stephen\documents\github\goah\src\spaceobject.cpp
 	"SpaceObject.h"
 
-1401882010 c:\users\stephen\documents\github\goah\include\spaceobject.h
+1401904164 c:\users\stephen\documents\github\goah\include\spaceobject.h
 	"common.h"
 
 1393432518 c:\users\stephen\documents\eigen\eigen\geometry
