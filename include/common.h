@@ -22,6 +22,7 @@
 
 // 3rd party header files
 #include <Core>
+#include <Geometry>
 using namespace Eigen;
 
 // project header files
@@ -30,7 +31,8 @@ using namespace Eigen;
 #define MAX_CMD_BUFF 256						// console command input buffer
 
 // type definitions
-typedef Matrix< double , 3 , 1> coords3D;		// coordinates in 3D space
+typedef Matrix< double , 3 , 1> vect3D;		// vector in 3D space
+typedef Quaternion<double> quat3D;				// quaternion for orientations and rotations
 
 // enumerations
 enum COORDS										// offset into vector for each coordinate

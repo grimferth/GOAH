@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1401571037 source:c:\users\stephen\documents\github\goah\main.cpp
+1401799391 source:c:\users\stephen\documents\github\goah\main.cpp
 	<fstream>
 	<iostream>
 	<cstring>
@@ -8,8 +8,9 @@
 	"global.h"
 	"main.h"
 
-1401799045 c:\users\stephen\documents\github\goah\include\common.h
+1401819693 c:\users\stephen\documents\github\goah\include\common.h
 	<Core>
+	<Geometry>
 
 1393432518 c:\users\stephen\documents\eigen\eigen\core
 	"src/Core/util/DisableStupidWarnings.h"
@@ -414,5 +415,296 @@
 
 1399811384 c:\users\stephen\documents\github\goah\include\global.h
 
-1399811384 c:\users\stephen\documents\github\goah\include\main.h
+1401799735 c:\users\stephen\documents\github\goah\include\main.h
+
+1401814096 source:c:\users\stephen\documents\github\goah\src\spaceobject.cpp
+	"SpaceObject.h"
+
+1401882010 c:\users\stephen\documents\github\goah\include\spaceobject.h
+	"common.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\geometry
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"SVD"
+	"LU"
+	<limits>
+	"src/Geometry/OrthoMethods.h"
+	"src/Geometry/EulerAngles.h"
+	"src/Geometry/Homogeneous.h"
+	"src/Geometry/RotationBase.h"
+	"src/Geometry/Rotation2D.h"
+	"src/Geometry/Quaternion.h"
+	"src/Geometry/AngleAxis.h"
+	"src/Geometry/Transform.h"
+	"src/Geometry/Translation.h"
+	"src/Geometry/Scaling.h"
+	"src/Geometry/Hyperplane.h"
+	"src/Geometry/ParametrizedLine.h"
+	"src/Geometry/AlignedBox.h"
+	"src/Geometry/Umeyama.h"
+	"src/Geometry/arch/Geometry_SSE.h"
+	"src/Eigen2Support/Geometry/All.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\svd
+	"QR"
+	"Householder"
+	"Jacobi"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/misc/Solve.h"
+	"src/SVD/JacobiSVD.h"
+	"src/SVD/JacobiSVD_MKL.h"
+	"src/SVD/UpperBidiagonalization.h"
+	"src/Eigen2Support/SVD.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\qr
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"Cholesky"
+	"Jacobi"
+	"Householder"
+	"src/misc/Solve.h"
+	"src/QR/HouseholderQR.h"
+	"src/QR/FullPivHouseholderQR.h"
+	"src/QR/ColPivHouseholderQR.h"
+	"src/QR/HouseholderQR_MKL.h"
+	"src/QR/ColPivHouseholderQR_MKL.h"
+	"src/Eigen2Support/QR.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+	"Eigenvalues"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\cholesky
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/misc/Solve.h"
+	"src/Cholesky/LLT.h"
+	"src/Cholesky/LDLT.h"
+	"src/Cholesky/LLT_MKL.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\misc\solve.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\cholesky\llt.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\cholesky\ldlt.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\cholesky\llt_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+	<iostream>
+
+1393432518 c:\users\stephen\documents\eigen\eigen\jacobi
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Jacobi/Jacobi.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\jacobi\jacobi.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\householder
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Householder/Householder.h"
+	"src/Householder/HouseholderSequence.h"
+	"src/Householder/BlockHouseholder.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\householder\householder.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\householder\householdersequence.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\householder\blockhouseholder.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\qr\householderqr.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\qr\fullpivhouseholderqr.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\qr\colpivhouseholderqr.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\qr\householderqr_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\qr\colpivhouseholderqr_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\qr.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\eigenvalues
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"Cholesky"
+	"Jacobi"
+	"Householder"
+	"LU"
+	"Geometry"
+	"src/Eigenvalues/Tridiagonalization.h"
+	"src/Eigenvalues/RealSchur.h"
+	"src/Eigenvalues/EigenSolver.h"
+	"src/Eigenvalues/SelfAdjointEigenSolver.h"
+	"src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h"
+	"src/Eigenvalues/HessenbergDecomposition.h"
+	"src/Eigenvalues/ComplexSchur.h"
+	"src/Eigenvalues/ComplexEigenSolver.h"
+	"src/Eigenvalues/RealQZ.h"
+	"src/Eigenvalues/GeneralizedEigenSolver.h"
+	"src/Eigenvalues/MatrixBaseEigenvalues.h"
+	"src/Eigenvalues/RealSchur_MKL.h"
+	"src/Eigenvalues/ComplexSchur_MKL.h"
+	"src/Eigenvalues/SelfAdjointEigenSolver_MKL.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\lu
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/misc/Solve.h"
+	"src/misc/Kernel.h"
+	"src/misc/Image.h"
+	"src/LU/FullPivLU.h"
+	"src/LU/PartialPivLU.h"
+	"src/LU/PartialPivLU_MKL.h"
+	"src/LU/Determinant.h"
+	"src/LU/Inverse.h"
+	"src/LU/arch/Inverse_SSE.h"
+	"src/Eigen2Support/LU.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\misc\kernel.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\misc\image.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\lu\fullpivlu.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\lu\partialpivlu.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\lu\partialpivlu_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\lu\determinant.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\lu\inverse.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\lu\arch\inverse_sse.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\lu.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\tridiagonalization.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\realschur.h
+	"./HessenbergDecomposition.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\hessenbergdecomposition.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\eigensolver.h
+	"./RealSchur.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\selfadjointeigensolver.h
+	"./Tridiagonalization.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\generalizedselfadjointeigensolver.h
+	"./Tridiagonalization.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\complexschur.h
+	"./HessenbergDecomposition.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\complexeigensolver.h
+	"./ComplexSchur.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\realqz.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\generalizedeigensolver.h
+	"./RealQZ.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\matrixbaseeigenvalues.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\realschur_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\complexschur_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigenvalues\selfadjointeigensolver_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\svd\jacobisvd.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\svd\jacobisvd_mkl.h
+	"Eigen/src/Core/util/MKL_support.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\svd\upperbidiagonalization.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\svd.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\orthomethods.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\eulerangles.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\homogeneous.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\rotationbase.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\rotation2d.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\quaternion.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\angleaxis.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\transform.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\translation.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\scaling.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\hyperplane.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\parametrizedline.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\alignedbox.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\umeyama.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\geometry\arch\geometry_sse.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\all.h
+	<limits>
+	"RotationBase.h"
+	"Rotation2D.h"
+	"Quaternion.h"
+	"AngleAxis.h"
+	"Transform.h"
+	"Translation.h"
+	"Scaling.h"
+	"AlignedBox.h"
+	"Hyperplane.h"
+	"ParametrizedLine.h"
+	"RotationBase.h"
+	"Rotation2D.h"
+	"Quaternion.h"
+	"AngleAxis.h"
+	"Transform.h"
+	"Translation.h"
+	"Scaling.h"
+	"AlignedBox.h"
+	"Hyperplane.h"
+	"ParametrizedLine.h"
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\rotationbase.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\rotation2d.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\quaternion.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\angleaxis.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\transform.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\translation.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\scaling.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\alignedbox.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\hyperplane.h
+
+1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\parametrizedline.h
 

@@ -21,7 +21,7 @@
 // project header files
 
 // declarations
-#define PROJECT_VERSION "SCS 1.0.0, Copyright (C) 2014, Stephen Wunschel"
+#define PROJECT_VERSION "GOAH 1.0.0, Copyright (C) 2014, Stephen Wunschel"
 
 // enumerations
 enum ENUM_CMDS									// console command translation
