@@ -13,6 +13,7 @@
 // standard header files
 
 // project header files
+#include "shared_functions.h"
 #include "SpaceObject.h"
 
 //3rd party header files
@@ -82,11 +83,11 @@ vect3D SpaceObject::getVelocityG(void)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   06/04/2014   SDW   initial coding
+ * 100   06/05/2014   SDW   initial coding
  *************************************************************************************************************************************/
 void SpaceObject::setOrientationG(double y, double p, double r)
 {
-	// TODO using Euler anglestranslate yaw/pitch/role to quat
+	objectOrientationG = Angles2Quat(y, p, r);
 }
 
 /*************************************************************************************************************************************
