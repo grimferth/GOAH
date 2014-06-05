@@ -36,6 +36,8 @@ using namespace Eigen;
 // variables
 
 // function prototypes
-quat3D Angles2Quat(double, double, double);		// converts yaw/pitch/roll (in degrees) to quaternion
-quat3D Angles2Quat(vect3D);						// converts yaw/pitch/roll (in degrees) to quaternion
 double Degrees2Rads(double);						// converts angle expressed in degrees to radians
+quat3D Euler2Quat(double, double, double);		// converts yaw/pitch/roll (in degrees) to quaternion
+quat3D Euler2Quat(vect3D);						// converts yaw/pitch/roll (in degrees) to quaternion
+vect3D Quat2Euler(quat3D);						// converts quaternion to yaw/pitch/roll (in degrees)
+double Rads2Degrees(double);					// converts angle expressed in radians to degrees

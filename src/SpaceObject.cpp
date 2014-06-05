@@ -87,7 +87,7 @@ vect3D SpaceObject::getVelocityG(void)
  *************************************************************************************************************************************/
 void SpaceObject::setOrientationG(double y, double p, double r)
 {
-	objectOrientationG = Angles2Quat(y, p, r);
+	objectOrientationG = Euler2Quat(y, p, r);
 }
 
 /*************************************************************************************************************************************
