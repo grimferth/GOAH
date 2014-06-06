@@ -417,11 +417,11 @@
 
 1401799735 c:\users\stephen\documents\github\goah\include\main.h
 
-1402009074 source:c:\users\stephen\documents\github\goah\src\spaceobject.cpp
+1402055096 source:c:\users\stephen\documents\github\goah\src\spaceobject.cpp
 	"shared_functions.h"
 	"SpaceObject.h"
 
-1402008895 c:\users\stephen\documents\github\goah\include\spaceobject.h
+1402018250 c:\users\stephen\documents\github\goah\include\spaceobject.h
 	"common.h"
 
 1393432518 c:\users\stephen\documents\eigen\eigen\geometry
@@ -709,12 +709,18 @@
 
 1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\parametrizedline.h
 
-1401979122 source:c:\users\stephen\documents\github\goah\src\shared_functions.cpp
+1402055549 source:c:\users\stephen\documents\github\goah\src\shared_functions.cpp
 	<math.h>
 	"shared_functions.h"
 
-1401978171 c:\users\stephen\documents\github\goah\include\shared_functions.h
+1402054787 c:\users\stephen\documents\github\goah\include\shared_functions.h
 	<Geometry>
 	"common.h"
 	"SpaceObject.h"
+
+1402017281 source:c:\users\stephen\documents\github\goah\src\poweredobject.cpp
+	"PoweredObject.h"
+
+1402017187 c:\users\stephen\documents\github\goah\include\poweredobject.h
+	<SpaceObject.h>
 

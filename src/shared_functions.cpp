@@ -39,6 +39,7 @@ double Degrees2Rads(double degree)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
+ * 100   06/06/2014   SDW   normalize quat before returning
  * 100   06/05/2014   BSW   initial coding
  *************************************************************************************************************************************/
 quat3D Euler2Quat(double y, double p, double r)
@@ -56,6 +57,7 @@ quat3D Euler2Quat(double y, double p, double r)
 	results.x() = sinf(yaw / 2) * sinf(pitch / 2) * cosf(roll / 2) - cosf(yaw / 2) * cosf(pitch / 2) * sinf(roll / 2);
 	results.y() = sinf(yaw / 2) * cosf(pitch / 2) * cosf(roll / 2) - cosf(yaw / 2) * sinf(pitch / 2) * sinf(roll / 2);
 	results.z() = cosf(yaw / 2) * sinf(pitch / 2) * cosf(roll / 2) - sinf(yaw / 2) * cosf(pitch / 2) * sinf(roll / 2);
+	results.normalize();
 	// return results
 	return results;
 }
@@ -71,6 +73,32 @@ quat3D Euler2Quat(vect3D n)
 {
 	return Euler2Quat(n(yaw_angle),n(pitch_angle),n(roll_angle));
 }
+
+/*************************************************************************************************************************************
+ * Global2Local - transform global coordinates to local FOR
+ *
+ * VRM      Date      By    Description
+ * ===   ==========   ===   ==========================================================================================================
+ * 100   06/06/2014   BSW   initial coding
+ *************************************************************************************************************************************/
+vect3D Global2Local(vect3D globalpos, quat3D orientation)
+{
+	return orientation._transformVector(globalpos);
+}
+
+/*************************************************************************************************************************************
+ * Local2Global- transform local coordinates to global FOR
+ *
+ * VRM      Date      By    Description
+ * ===   ==========   ===   ==========================================================================================================
+ * 100   06/06/2014   SDW   initial coding
+ *************************************************************************************************************************************/
+vect3D Local2Global(vect3D localpos, quat3D orientation)
+{
+	quat3D inverted = orientation.inverse();
+	return inverted._transformVector(localpos);
+}
+
 
 /*************************************************************************************************************************************
  * Quat2Euler - converts quaternion to yaw/pitch/roll (in degrees)

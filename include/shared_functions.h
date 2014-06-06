@@ -39,5 +39,7 @@ using namespace Eigen;
 double Degrees2Rads(double);						// converts angle expressed in degrees to radians
 quat3D Euler2Quat(double, double, double);		// converts yaw/pitch/roll (in degrees) to quaternion
 quat3D Euler2Quat(vect3D);						// converts yaw/pitch/roll (in degrees) to quaternion
+vect3D Global2Local(vect3D, quat3D);			// transform global coordinates to local FOR
+vect3D Local2Global(vect3D, quat3D);			// transform local coordinates to global FOR
 vect3D Quat2Euler(quat3D);						// converts quaternion to yaw/pitch/roll (in degrees)
 double Rads2Degrees(double);					// converts angle expressed in radians to degrees

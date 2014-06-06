@@ -71,11 +71,11 @@ vect3D SpaceObject::getPositionG(void)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   06/05/2014   BSW   initial coding
+ * 100   06/06/2014   SDW   initial coding
  *************************************************************************************************************************************/
 vect3D SpaceObject::getPositionL(quat3D orientation)
 {
-	return orientation._transformVector(objectPositionG);
+	return Global2Local(objectPositionG, orientation);
 }
 
 /*************************************************************************************************************************************
@@ -107,11 +107,13 @@ void SpaceObject::setOrientationG(double y, double p, double r)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
+ * 100   06/06/2014   SDW   normalize quat before returning
  * 100   06/04/2014   SDW   initial coding
  *************************************************************************************************************************************/
 void SpaceObject::setOrientationG(quat3D n)
 {
 	objectOrientationG = n;
+	objectOrientationG.normalize();
 }
 
 /*************************************************************************************************************************************
