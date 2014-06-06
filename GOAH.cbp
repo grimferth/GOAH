@@ -54,12 +54,14 @@
 		<Linker>
 			<Add directory="C:/Users/Stephen/Documents/GitHub/GOAH/" />
 		</Linker>
+		<Unit filename="include/PoweredObject.h" />
 		<Unit filename="include/SpaceObject.h" />
 		<Unit filename="include/common.h" />
 		<Unit filename="include/global.h" />
 		<Unit filename="include/main.h" />
 		<Unit filename="include/shared_functions.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/PoweredObject.cpp" />
 		<Unit filename="src/SpaceObject.cpp" />
 		<Unit filename="src/shared_functions.cpp" />
 		<Extensions>

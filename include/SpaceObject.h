@@ -40,8 +40,13 @@ class SpaceObject
 		vect3D objectPositionG;					// xyz coordinates of object in global FOR
 		vect3D objectVelocityG;					// velocity vector in global FOR
 		// private method members
+		vect3D getFacingG(void);				// retrieve unit vector pointing in direction of +x axis in global FOR
+		vect3D getFacingL(void);				// retrieve unit vector pointing in direction of +x axis in local FOR
+		vect3D getHeadingG(void);				// retrieve unit vector pointing in direction of velocity in global FOR
+		vect3D getHeadingL(void);				// retrieve unit vector pointing in direction of velocity in local FOR
 		quat3D getOrientationG(void);			// retrieve object's orientation in global FOR
 		vect3D getPositionG(void);				// retrieve object's position in global FOR
+		vect3D getPositionL(quat3D);			// retrieve object's position in local FOR via passed orientation
 		vect3D getVelocityG(void);				// retrieve object's velocity in global FOR
 		void setOrientationG(double, double, double);		// set object's orientation in global FOR using Euler angles
 		void setOrientationG(quat3D);			// set object's orientation in global FOR

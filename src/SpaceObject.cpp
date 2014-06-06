@@ -67,6 +67,18 @@ vect3D SpaceObject::getPositionG(void)
 }
 
 /*************************************************************************************************************************************
+ * getPositionL - retrieve object's position in local FOR via passed orientation
+ *
+ * VRM      Date      By    Description
+ * ===   ==========   ===   ==========================================================================================================
+ * 100   06/05/2014   BSW   initial coding
+ *************************************************************************************************************************************/
+vect3D SpaceObject::getPositionL(quat3D orientation)
+{
+	return orientation._transformVector(objectPositionG);
+}
+
+/*************************************************************************************************************************************
  * getVelocityG - retrieve object's velocity in global FOR
  *
  * VRM      Date      By    Description
