@@ -31,6 +31,9 @@ class PoweredObject : public SpaceObject
 		// public method members
 		PoweredObject();
 		~PoweredObject();
+		vect3D getAcceleration(void);			// retrieve object's acceleration vector
+		double getThrust(void);					// retrieve object's thrust
+		void setThrust(double);					// set object's thrust
 	protected:
 		// protected data members
 		// protected method members
@@ -38,9 +41,6 @@ class PoweredObject : public SpaceObject
 		// private data members
 		double objectThrust;					// magnitude of thrust vector of object
 		// private method members
-		vect3D getAcceleration(void);			// retrieve object's acceleration vector
-		double getThrust(void);					// retrieve object's thrust
-		void setThrust(double);					// set object's thrust
 
 };
 

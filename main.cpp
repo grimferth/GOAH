@@ -25,15 +25,17 @@ using namespace std;
 #include "common.h"								// definitions shared by entire project
 #include "global.h"								// definitions for global variables
 #include "main.h"								// definitions for main program
+#include "PoweredObject.h"						// definitions for PowerObject class
 
 // declarations
+PoweredObject myShip;
 
 /*************************************************************************************************************************************
  * main - project entry point
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   05/xx/2014   SDW   initial coding
+ * 100   06/08/2014   SDW   initial coding
  *************************************************************************************************************************************/
 int main()
 {
@@ -90,11 +92,17 @@ bool doCommand(const char *input_buffer)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   05/09/2014   SDW   initial coding
+ * 100   06/07/2014   SDW   initial coding
  *************************************************************************************************************************************/
 bool handle_display(void)
 {
-	// TODO
+	// local variables
+	vect3D shipPosition;
+
+	// display ship status
+	shipPosition = myShip.getPositionG();
+	std::cout << "Position = (" << shipPosition(x_coord) << "," << shipPosition(y_coord) << "," << shipPosition(z_coord) << ")" << std::endl;
+	std::cout << "Thrust amount = " << myShip.getThrust() << std::endl;
 	return true;
 }
 
@@ -103,11 +111,32 @@ bool handle_display(void)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   05/09/2014   SDW   initial coding
+ * 100   06/07/2014   SDW   initial coding
  *************************************************************************************************************************************/
 bool handle_setposition(const char *buf)
 {
-	// TODO
+	// local variables
+	stringstream ss (stringstream::in | stringstream::out);		// parsing stringstream
+	string command;
+	double x, y, z;
+	vect3D checkpos;
+
+	// process
+	ss << buf;									// parse coordinates
+	ss >> command >> x >> y >> z;
+	std::cout << "x = " << x << ", y = " << y << ", z = " << z << std::endl;
+	myShip.setPositionG(x, y, z);				// set position
+	checkpos = myShip.getPositionG();			// get position
+	if ((x == checkpos(x_coord))&&				// compare current position to requested position
+		(y == checkpos(y_coord))&&
+		(z == checkpos(z_coord)))
+	{
+		std::cout << "confirmed " << std::endl;
+		return true;
+	}
+
+	// TODO reset velocity vector
+
 	return true;
 }
 
@@ -120,6 +149,22 @@ bool handle_setposition(const char *buf)
  *************************************************************************************************************************************/
 bool handle_setthrust(const char *buf)
 {
+	// local variables
+	stringstream ss (stringstream::in | stringstream::out);		// parsing stringstream
+	string command;
+	int thrustAmount, checkAmount;
+
+	// process
+	ss << buf;									// parse thrust amount
+	ss >> command >> thrustAmount;
+	std::cout << "thrust = " << thrustAmount << std::endl;
+	myShip.setThrust(thrustAmount);				// set thrust amount
+	checkAmount = myShip.getThrust();			// get thrust amount
+	if (thrustAmount == checkAmount)			// compare current thrust to requested thrust
+	{
+		std::cout << "confirmed " << std::endl;
+		return true;
+	}
 	return true;
 }
 
