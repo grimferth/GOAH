@@ -27,6 +27,7 @@
 enum ENUM_CMDS									// console command translation
 {
 	quit=0,
+	resetvalues,
 	display,
 	setposition,
 	setthrust,
@@ -38,6 +39,7 @@ enum ENUM_CMDS									// console command translation
 // function prototypes
 bool doCommand(const char *);					// execute contents of command buffer
 bool handle_display(void);						// execute display command
+bool handle_reset(void);						// execute display command
 bool handle_setposition(const char *);			// execute setposition command
 bool handle_setthrust(const char *);			// execute setthrust command
 int parseCommand(const char *);				// return switch token for command received

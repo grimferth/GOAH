@@ -105,19 +105,12 @@ vect3D Local2Global(vect3D localpos, quat3D orientation)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   06/07/2014   SDW   initial coding
+ * 100   06/09/2014   SDW   initial coding
  *************************************************************************************************************************************/
 vect3D NormalizeVector(vect3D n)
 {
-	// local variables
-	vect3D results;
-	double a;
-
-	// process
-	a = abs(sqrt((n(x_coord)*n(x_coord))+(n(y_coord)*n(y_coord))+(n(z_coord)*n(x_coord))));
-	results(x_coord) = n(x_coord)/a;
-	results(y_coord) = n(y_coord)/a;
-	results(z_coord) = n(z_coord)/a;
+	vect3D results = n;
+	results.normalize();
 	return results;
 }
 
@@ -179,6 +172,7 @@ double Rads2Degrees(double rad)
  *************************************************************************************************************************************/
 double Vector(vect3D n)
 {
-	return abs(sqrt((n(x_coord)*n(x_coord))+(n(y_coord)*n(y_coord))+(n(z_coord)*n(x_coord))));
+	double results = n.norm();
+	return results;
 }
 

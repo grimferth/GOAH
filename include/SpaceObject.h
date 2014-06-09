@@ -16,6 +16,7 @@
 
 // project header files
 #include "common.h"								// definitions shared by entire project
+#include "global.h"								// global variables shared by entire project
 
 /***************************************************************************************************************
  * symbolic definitions

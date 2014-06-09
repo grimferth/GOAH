@@ -1,9 +1,9 @@
 /*+===================================================================
-   
+
    File:      global.h
 
    Summary:   definitions for global variables
- 
+
    Classes:   none
 
    Functions: none

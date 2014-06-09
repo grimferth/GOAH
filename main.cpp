@@ -73,6 +73,9 @@ bool doCommand(const char *input_buffer)
 		case display:
 			handle_display();
 			return true;
+		case resetvalues:
+			handle_reset();
+			return true;
 		case setposition:
 			handle_setposition(input_buffer);
 			return true;
@@ -114,6 +117,23 @@ bool handle_display(void)
 	std::cout << "Heading [L] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
 	std::cout << "Velocity amount = " << myShip.getVelocityMag() << std::endl;
 	std::cout << "Thrust amount = " << myShip.getThrust() << std::endl;
+	return true;
+}
+
+/*************************************************************************************************************************************
+ * handle_reset - execute reset command
+ *
+ * VRM      Date      By    Description
+ * ===   ==========   ===   ==========================================================================================================
+ * 100   06/09/2014   SDW   initial coding
+ *************************************************************************************************************************************/
+bool handle_reset(void)
+{
+	myShip.setOrientationG(0, 0, 0);			// set orientation to x=y=z=0
+	myShip.setPositionG(0, 0, 0);				// set Position to x=y=z=0
+	myShip.setThrust(0);						// set thrust to 0
+	myShip.setVelocityG(myShip.getPositionG());		// set Velocity vector to null
+	std::cout << "complete " << std::endl;
 	return true;
 }
 
@@ -189,6 +209,7 @@ bool handle_setthrust(const char *buf)
 int parseCommand(const char *buf)
 {
 	if ((!strcmp(buf, "quit")) || (!strcmp(buf, "exit"))) return quit;
+	if (!strcmp(buf, "reset")) return resetvalues;
 	if (!strcmp(buf, "display")) return display;
 	if (!strncmp(buf, "setposition ", 12)) return setposition;
 	if (!strncmp(buf, "setthrust ", 10)) return setthrust;
