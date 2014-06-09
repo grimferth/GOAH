@@ -44,3 +44,4 @@ vect3D Local2Global(vect3D, quat3D);			// transform local coordinates to global 
 vect3D NormalizeVector(vect3D);					// generate unit vector from given vector
 vect3D Quat2Euler(quat3D);						// converts quaternion to yaw/pitch/roll (in degrees)
 double Rads2Degrees(double);					// converts angle expressed in radians to degrees
+double VectorLength(vect3D);					// returns length of vector

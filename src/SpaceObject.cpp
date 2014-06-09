@@ -122,11 +122,11 @@ vect3D SpaceObject::getPositionG(void)
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   06/06/2014   SDW   initial coding
+ * 100   06/09/2014   SDW   initial coding
  *************************************************************************************************************************************/
-vect3D SpaceObject::getPositionL(quat3D orientation)
+vect3D SpaceObject::getPositionL(void)
 {
-	return Global2Local(objectPositionG, orientation);
+	return Global2Local(objectPositionG, objectOrientationG);
 }
 
 /*************************************************************************************************************************************
@@ -139,6 +139,20 @@ vect3D SpaceObject::getPositionL(quat3D orientation)
 vect3D SpaceObject::getVelocityG(void)
 {
 	return objectVelocityG;
+}
+
+/*************************************************************************************************************************************
+ * getVelocityMag - retrieve object's magnitude of velocity
+ *
+ * VRM      Date      By    Description
+ * ===   ==========   ===   ==========================================================================================================
+ * 100   06/xx/2014   SDW   initial coding
+ *************************************************************************************************************************************/
+double SpaceObject::getVelocityMag(void)
+{
+	// return VectorLength(objectVelocityG);
+	// TODO
+	return 0;
 }
 
 /*************************************************************************************************************************************

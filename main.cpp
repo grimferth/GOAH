@@ -97,11 +97,22 @@ bool doCommand(const char *input_buffer)
 bool handle_display(void)
 {
 	// local variables
-	vect3D shipPosition;
+	vect3D tempVector;
 
 	// display ship status
-	shipPosition = myShip.getPositionG();
-	std::cout << "Position = (" << shipPosition(x_coord) << "," << shipPosition(y_coord) << "," << shipPosition(z_coord) << ")" << std::endl;
+	tempVector = myShip.getPositionG();
+	std::cout << "Position [G] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getPositionL();
+	std::cout << "Position [L] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getFacingG();
+	std::cout << "Facing [G] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getFacingL();
+	std::cout << "Facing [L] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getHeadingG();
+	std::cout << "Heading [G] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getHeadingL();
+	std::cout << "Heading [L] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	std::cout << "Velocity amount = " << myShip.getVelocityMag() << std::endl;
 	std::cout << "Thrust amount = " << myShip.getThrust() << std::endl;
 	return true;
 }
