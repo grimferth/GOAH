@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1402363781 source:c:\users\stephen\documents\github\goah\main.cpp
+1402400634 source:c:\users\stephen\documents\github\goah\main.cpp
 	<fstream>
 	<iostream>
 	<cstring>
@@ -9,7 +9,7 @@
 	"main.h"
 	"PoweredObject.h"
 
-1402362646 c:\users\stephen\documents\github\goah\include\common.h
+1402400634 c:\users\stephen\documents\github\goah\include\common.h
 	<Core>
 	<Geometry>
 
@@ -414,15 +414,15 @@
 
 1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\mathfunctions.h
 
-1402362646 c:\users\stephen\documents\github\goah\include\global.h
+1402400634 c:\users\stephen\documents\github\goah\include\global.h
 
-1402362646 c:\users\stephen\documents\github\goah\include\main.h
+1402400634 c:\users\stephen\documents\github\goah\include\main.h
 
 1402367525 source:c:\users\stephen\documents\github\goah\src\spaceobject.cpp
 	"shared_functions.h"
 	"SpaceObject.h"
 
-1402364614 c:\users\stephen\documents\github\goah\include\spaceobject.h
+1402400634 c:\users\stephen\documents\github\goah\include\spaceobject.h
 	"common.h"
 	"global.h"
 
@@ -711,19 +711,19 @@
 
 1393432518 c:\users\stephen\documents\eigen\eigen\src\eigen2support\geometry\parametrizedline.h
 
-1402364267 source:c:\users\stephen\documents\github\goah\src\shared_functions.cpp
+1402400634 source:c:\users\stephen\documents\github\goah\src\shared_functions.cpp
 	<math.h>
 	"common.h"
 	"shared_functions.h"
 
-1402362646 c:\users\stephen\documents\github\goah\include\shared_functions.h
+1402400634 c:\users\stephen\documents\github\goah\include\shared_functions.h
 	<Geometry>
 	"common.h"
 	"SpaceObject.h"
 
-1402362646 source:c:\users\stephen\documents\github\goah\src\poweredobject.cpp
+1402400634 source:c:\users\stephen\documents\github\goah\src\poweredobject.cpp
 	"PoweredObject.h"
 
-1402362646 c:\users\stephen\documents\github\goah\include\poweredobject.h
+1402400634 c:\users\stephen\documents\github\goah\include\poweredobject.h
 	<SpaceObject.h>
 
