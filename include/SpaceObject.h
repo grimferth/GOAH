@@ -40,7 +40,8 @@ class SpaceObject
 		vect3D getPositionG(void);				// retrieve object's position in global FOR
 		vect3D getPositionL(void);				// retrieve object's position in local FOR via passed orientation
 		vect3D getVelocityG(void);				// retrieve object's velocity in global FOR
-		double getVelocityMag(void);			// retrieve object's magnitude of velocity
+		vect3D getVelocityL(void);              // retrieve object's velocity in local FOR
+		double getSpeed(void);			        // retrieve object's speed (magnitude of velocity vector)
 		void setOrientationG(double, double, double);		// set object's orientation in global FOR using Euler angles
 		void setOrientationG(quat3D);			// set object's orientation in global FOR
 		void setPositionG(double, double, double);	// set object's position in global FOR using xyz coordinates

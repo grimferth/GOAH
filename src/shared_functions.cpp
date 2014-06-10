@@ -110,8 +110,13 @@ vect3D Local2Global(vect3D localpos, quat3D orientation)
 vect3D NormalizeVector(vect3D n)
 {
 	vect3D results = n;
-	results.normalize();
-	return results;
+	if ((n(x_coord) == 0)&&(n(y_coord) == 0)&& (n(z_coord)==0))
+        return n;
+    else
+    {
+        results.normalize();
+        return results;
+    }
 }
 
 /*************************************************************************************************************************************
@@ -170,7 +175,7 @@ double Rads2Degrees(double rad)
  * ===   ==========   ===   ==========================================================================================================
  * 100   06/09/2014   SDW   initial coding
  *************************************************************************************************************************************/
-double Vector(vect3D n)
+double VectorLength(vect3D n)
 {
 	double results = n.norm();
 	return results;
