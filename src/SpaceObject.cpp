@@ -195,12 +195,11 @@ void SpaceObject::setOrientationG(quat3D n)
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
  * 100   06/04/2014   SDW   initial coding
+ * 100   06/11/2014   SDW   switch to comma-initializer syntax
  *************************************************************************************************************************************/
 void SpaceObject::setPositionG(double x, double y, double z)
 {
-	objectPositionG(x_coord) = x;
-	objectPositionG(y_coord) = y;
-	objectPositionG(z_coord) = z;
+	objectPositionG << x, y, z;
 }
 
 /*************************************************************************************************************************************
@@ -225,4 +224,16 @@ void SpaceObject::setPositionG(vect3D n)
 void SpaceObject::setVelocityG(vect3D n)
 {
 	objectVelocityG = n;
+}
+
+/*************************************************************************************************************************************
+ * setVelocityL - set object's velocity using local FOR
+ *
+ * VRM      Date      By    Description
+ * ===   ==========   ===   ==========================================================================================================
+ * 100   06/11/2014   SDW   initial coding
+ *************************************************************************************************************************************/
+void SpaceObject::setVelocityL(vect3D n)
+{
+	objectVelocityG = Local2Global(n, objectOrientationG);
 }

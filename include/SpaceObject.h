@@ -47,12 +47,13 @@ class SpaceObject
 		void setPositionG(double, double, double);	// set object's position in global FOR using xyz coordinates
 		void setPositionG(vect3D);				// set object's position in global FOR
 		void setVelocityG(vect3D);				// set object's velocity in global FOR
+		void setVelocityL(vect3D);				// set object's velocity using local FOR
 	protected:
 		// protected data members
+		quat3D objectOrientationG;				// orientation of object in global FOR
 		// protected method members
 	private:
 		// private data members
-		quat3D objectOrientationG;				// orientation of object in global FOR
 		vect3D objectPositionG;					// xyz coordinates of object in global FOR
 		vect3D objectVelocityG;					// velocity vector in global FOR
 		// private method members

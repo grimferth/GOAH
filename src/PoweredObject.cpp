@@ -14,6 +14,7 @@
 
 // project header files
 #include "PoweredObject.h"
+#include "shared_functions.h"
 
 //3rd party header files
 
@@ -42,16 +43,29 @@ PoweredObject::~PoweredObject()
 }
 
 /*************************************************************************************************************************************
- * getAcceleration - retrieve object's acceleration vector
+ * getAccelerationG - retrieve object's acceleration vector in global FOR
  *
  * VRM      Date      By    Description
  * ===   ==========   ===   ==========================================================================================================
- * 100   06/xx/2014   SDW   initial coding
+ * 100   06/11/2014   SDW   initial coding
  *************************************************************************************************************************************/
-vect3D PoweredObject::getAcceleration(void)
+vect3D PoweredObject::getAccelerationG(void)
 {
-	// TODO
+	return getThrust()*getFacingG();
 }
+
+/*************************************************************************************************************************************
+ * getAccelerationL - retrieve object's acceleration vector in local FOR
+ *
+ * VRM      Date      By    Description
+ * ===   ==========   ===   ==========================================================================================================
+ * 100   06/11/2014   SDW   initial coding
+ *************************************************************************************************************************************/
+vect3D PoweredObject::getAccelerationL(void)
+{
+	return Global2Local(getAccelerationG(), objectOrientationG);
+}
+
 
 /*************************************************************************************************************************************
  * getThrust - retrieve object's thrust
