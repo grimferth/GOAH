@@ -721,8 +721,9 @@
 	"common.h"
 	"SpaceObject.h"
 
-1402400634 source:c:\users\stephen\documents\github\goah\src\poweredobject.cpp
+1402487857 source:c:\users\stephen\documents\github\goah\src\poweredobject.cpp
 	"PoweredObject.h"
+	"shared_functions.h"
 
 1402487798 c:\users\stephen\documents\github\goah\include\poweredobject.h
 	<SpaceObject.h>

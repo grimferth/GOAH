@@ -115,6 +115,17 @@ bool handle_display(void)
 	std::cout << "Heading [G] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
 	tempVector = myShip.getHeadingL();
 	std::cout << "Heading [L] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+
+	tempVector = myShip.getVelocityG();
+	std::cout << "Velocity Vector [G] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getVelocityL();
+	std::cout << "Velocity Vector [L] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getAccelerationG();
+	std::cout << "Acceleration Vector [G] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+	tempVector = myShip.getAccelerationL();
+	std::cout << "Acceleration Vector [L] = (" << tempVector(x_coord) << "," << tempVector(y_coord) << "," << tempVector(z_coord) << ")" << std::endl;
+
+
 	std::cout << "Velocity amount = " << myShip.getSpeed() << std::endl;
 	std::cout << "Thrust amount = " << myShip.getThrust() << std::endl;
 	return true;

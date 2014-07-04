@@ -31,6 +31,8 @@ class PoweredObject : public SpaceObject
 		// public method members
 		PoweredObject();
 		~PoweredObject();
+		void applyThrust(double);				// modify objectVelocity using facing and thrust
+		void applyThrust(void);				// modify objectVelocity using facing and thrust
 		vect3D getAccelerationG(void);			// retrieve object's acceleration vector in global FOR
 		vect3D getAccelerationL(void);			// retrieve object's acceleration vector in local FOR
 		double getThrust(void);					// retrieve object's thrust
